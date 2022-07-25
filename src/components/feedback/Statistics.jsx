@@ -1,4 +1,5 @@
 import { StateListStyled, StateElStyled } from './feedback.styled';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({ allStates, total, positivePercentage }) => (
   <>
@@ -14,3 +15,12 @@ export const Statistics = ({ allStates, total, positivePercentage }) => (
     <p>Positive feedback: {positivePercentage}</p>
   </>
 );
+
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  totall: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+};

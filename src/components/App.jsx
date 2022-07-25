@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Statistics } from './feedback/Statistics';
 import { FeedbackOptions } from './feedback/FeedbackOptions';
 import { Section } from './feedback/Section';
@@ -56,18 +55,3 @@ export function App() {
     </Section>
   );
 }
-
-Section.propTypes = {
-  title: PropTypes.string,
-};
-
-FeedbackOptions.propTypes = {
-  options: PropTypes.object,
-  onLeaveFeedback: PropTypes.func,
-};
-
-Statistics.propTypes = {
-  allStates: PropTypes.object,
-  total: PropTypes.number,
-  positivePercentage: PropTypes.string,
-};
