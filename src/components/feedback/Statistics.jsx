@@ -14,3 +14,10 @@ export const Statistics = ({ allStates, total, positivePercentage }) => (
     <p>Positive feedback: {positivePercentage}</p>
   </>
 );
+
+
+Statistics.propTypes = {
+  allStates: PropTypes.object,
+  total: PropTypes.number,
+  positivePercentage: PropTypes.string,
+};
